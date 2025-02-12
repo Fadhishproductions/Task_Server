@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./",
+    "module": "CommonJS",
+    "target": "ES6",
+    "strict": true,
+    "esModuleInterop": true  // ✅ Add this line to fix import issues
+  },
+  "include": ["server.ts", "routes/**/*.ts", "controllers/**/*.ts", "models/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
